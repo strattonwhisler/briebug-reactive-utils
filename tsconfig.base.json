@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@briebug/persistant-behavior-subject": [
+        "packages/persistant-behavior-subject/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
