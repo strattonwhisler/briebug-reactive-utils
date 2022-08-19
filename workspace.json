@@ -2,7 +2,6 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
-    "persistant-behavior-subject": "packages/persistant-behavior-subject",
     "rxjs-utils": "packages/rxjs-utils"
   }
 }

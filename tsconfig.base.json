@@ -15,9 +15,6 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@briebug/persistant-behavior-subject": [
-        "packages/persistant-behavior-subject/src/index.ts"
-      ],
       "@briebug/rxjs-utils": ["packages/rxjs-utils/src/index.ts"]
     }
   },
