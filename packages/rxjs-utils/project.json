@@ -1,0 +1,34 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/rxjs-utils/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/rxjs-utils/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/rxjs-utils"],
+      "options": {
+        "jestConfig": "packages/rxjs-utils/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/rxjs-utils",
+        "tsConfig": "packages/rxjs-utils/tsconfig.lib.json",
+        "packageJson": "packages/rxjs-utils/package.json",
+        "main": "packages/rxjs-utils/src/index.ts",
+        "assets": ["packages/rxjs-utils/*.md"]
+      }
+    }
+  },
+  "tags": []
+}
