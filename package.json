@@ -4,6 +4,9 @@
   "license": "MIT",
   "scripts": {},
   "private": true,
+  "engines": {
+    "node": "16"
+  },
   "dependencies": {},
   "devDependencies": {
     "nx": "14.5.7",
