@@ -1,0 +1,34 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/ngrx-utils/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/ngrx-utils/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/ngrx-utils"],
+      "options": {
+        "jestConfig": "packages/ngrx-utils/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/ngrx-utils",
+        "tsConfig": "packages/ngrx-utils/tsconfig.lib.json",
+        "packageJson": "packages/ngrx-utils/package.json",
+        "main": "packages/ngrx-utils/src/index.ts",
+        "assets": ["packages/ngrx-utils/*.md"]
+      }
+    }
+  },
+  "tags": []
+}

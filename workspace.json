@@ -2,6 +2,7 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
-    "rxjs-utils": "packages/rxjs-utils"
+    "rxjs-utils": "packages/rxjs-utils",
+    "ngrx-utils": "packages/ngrx-utils"
   }
 }

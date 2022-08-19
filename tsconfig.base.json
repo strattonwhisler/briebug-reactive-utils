@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@briebug/ngrx-utils": ["packages/ngrx-utils/src/index.ts"],
       "@briebug/rxjs-utils": ["packages/rxjs-utils/src/index.ts"]
     }
   },
