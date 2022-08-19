@@ -7,13 +7,13 @@
   "engines": {
     "node": "16"
   },
-  "dependencies": {},
   "devDependencies": {
-    "nx": "14.5.7",
     "@nrwl/cli": "14.5.7",
+    "@nrwl/node": "^14.5.7",
     "@nrwl/workspace": "14.5.7",
-    "typescript": "~4.7.2",
-    "prettier": "^2.6.2"
+    "nx": "14.5.7",
+    "prettier": "^2.6.2",
+    "typescript": "~4.7.2"
   },
   "workspaces": [
     "packages/**"
