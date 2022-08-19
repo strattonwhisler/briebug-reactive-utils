@@ -43,10 +43,10 @@ export class PersistentBehaviorSubject<T> extends BehaviorSubject<T> {
           this.storage.options.write(newValue);
         }
         break;
-      case 'indexDB':
-      case 'ionicStorage':
-      case 'memoryBase':
-      case 'cookie':
+      // case 'indexDB':
+      // case 'ionicStorage':
+      // case 'memoryBase':
+      // case 'cookie':
       case 'custom':
         if (this.storage.options.write) {
           this.storage.options.write(newValue);
